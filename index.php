@@ -13,3 +13,7 @@ if(isset($_GET['work']))
 {
     $app->render("work.php");
 }
+if(isset($_GET['test']))
+{
+    $app->render("test.php");
+}

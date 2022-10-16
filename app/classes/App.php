@@ -23,6 +23,12 @@ class App extends Database
             include(VIEW . $page);
             $out = ob_get_clean();
         }
+        else
+        {
+            header("HTTP/1.0 404 Not Found");
+            echo "Document not found.";
+            die();
+        }
         echo $out;
     }
 
