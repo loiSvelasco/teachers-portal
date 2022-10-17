@@ -6,11 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
     <title>Administration</title>
+    <style>
+    .Site {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+
+    .Site-content {
+        flex: 1;
+    }
+    </style>
 </head>
-<body>
+<body class="Site">
+    <div class="ui borderless top attached menu">
+        <div class="ui container">
+            <a class="item toggle-sidebar">
+                <i class="sidebar icon"></i>
+                Menu
+            </a>
+            <div class="right menu">
+                <div class="item">
+                    <div class="ui transparent icon input">
+                        <input type="text" placeholder="Search...">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+                <a class="item">
+                    <i class="user circle icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
     
-</body>
-    <div class="ui inverted vertical footer segment">
+    <div class="pusher Site-content">
+        <div class="ui container basic segment">
+            <h3 class="ui header">Application Content</h3>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+    <div class="ui inverted vertical footer segment" style="width: 100%; padding: 3em 0em;">
         <div class="ui container">
             <div class="ui stackable inverted divided equal height stackable grid">
                 <div class="three wide column">
@@ -50,4 +87,17 @@
             </div>
         </div>
     </div>
+    </footer>
+    
+    <!-- /footer -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script src="/semantic/dist/semantic.min.js"></script>
+
+    <script>
+        $('.toggle-sidebar').click(function () {
+            $('.ui.sidebar').sidebar('toggle');
+        })
+    </script>
+</body>
 </html>
