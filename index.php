@@ -6,14 +6,21 @@ $app = new App();
 if(isset($_GET['home']) || $_SERVER['REQUEST_URI'] == "/")
 {
     $app->render("homepage.php", [
-        'app' => $app
+        'app' => $app,
+        'current' => 'home'
     ]);
 }
+
 if(isset($_GET['work']))
 {
-    $app->render("work.php");
+    $app->render("work.php", [
+        'current' => 'work'
+    ]);
 }
-if(isset($_GET['test']))
+
+if(isset($_GET['company']))
 {
-    $app->render("test.php");
+    $app->render("company.php", [
+        'current' => 'company'
+    ]);
 }

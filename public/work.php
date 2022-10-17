@@ -1,7 +1,12 @@
 <?php include("includes/header.php"); ?>
-<!-- Page Contents -->
-<div class="pusher">
-  
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        Work
+      </h1>
+      <h2>Do whatever you want when you want to.</h2>
+      <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+    </div>
+  </div>
 
   <div class="ui vertical stripe segment">
     <div class="ui middle aligned stackable grid container">
@@ -13,7 +18,7 @@
           <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
         </div>
         <div class="six wide right floated column">
-          <img src="https://picsum.photos/200?blur" class="ui large bordered rounded image">
+          <!-- <img src="https://picsum.photos/200?blur" class="ui large bordered rounded image"> -->
         </div>
       </div>
       <div class="row">
@@ -23,6 +28,14 @@
       </div>
     </div>
   </div>
+
+  <?php 
+    // while($row = $app->db->fetch_array($users))
+    // {
+    //   echo $row['email'] . "<br>";
+    // }
+  ?>
+
 
   <div class="ui vertical stripe quote segment">
     <div class="ui equal width stackable internally celled grid">
@@ -34,7 +47,7 @@
         <div class="column">
           <h3>"I shouldn't have gone with their competitor."</h3>
           <p>
-            <img src="https://picsum.photos/50" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
+            <!-- <img src="https://picsum.photos/50" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys -->
           </p>
         </div>
       </div>
@@ -54,35 +67,4 @@
       <a class="ui large button">I'm Still Quite Interested</a>
     </div>
   </div>
-
-
-  <div class="ui inverted vertical footer segment">
-    <div class="ui container">
-      <div class="ui stackable inverted divided equal height stackable grid">
-        <div class="three wide column">
-          <h4 class="ui inverted header">About</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item">Sitemap</a>
-            <a href="#" class="item">Contact Us</a>
-            <a href="#" class="item">Religious Ceremonies</a>
-            <a href="#" class="item">Gazebo Plans</a>
-          </div>
-        </div>
-        <div class="three wide column">
-          <h4 class="ui inverted header">Services</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item">Banana Pre-Order</a>
-            <a href="#" class="item">DNA FAQ</a>
-            <a href="#" class="item">How To Access</a>
-            <a href="#" class="item">Favorite X-Men</a>
-          </div>
-        </div>
-        <div class="seven wide column">
-          <h4 class="ui inverted header">Footer Header</h4>
-          <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 <?php include("includes/footer.php"); ?>
